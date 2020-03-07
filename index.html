@@ -7,39 +7,53 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   
-  Reliable, efficient delivery
-  Powered by Technology
+  <header class="header">
+    <div class="header__heading">Reliable, efficient delivery</div>
+    <div class="header__heading header__heading--bold">Powered by Technology</div>
+    <div class="header__paragraph">
+      Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful
+    </div>
+  </header>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+  <section class="card_wrap">
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <article class="card_wrap__card">
+      <h1 class="card_wrap__card__heading">Supervisor</h1>
+      <p class="card_wrap__card__paragraph">Monitors activity to identify project roadblocks</p>
+      <img src="./SVG/icon-supervisor.svg" alt="icon" class=".card_wrap__card__icon">
+    </article>
+  
+    <article class="card_wrap__card">
+      <h1 class="card_wrap__card__heading">Team Builder</h1>
+      <div class="card_wrap__card__paragraph">Scans our talent network to create the optimal team for your project</div>
+      <img src="./SVG/icon-team-builder.svg" alt="icon" class=".card_wrap__card__icon">
+    </article>
+  
+    <article class="card_wrap__card">
+      <h1 class="card_wrap__card__heading">Karma</h1>
+      <p class="card_wrap__card__paragraph">Regularly evaluates our talent to ensure quality</p>
+      <img src="./SVG/icon-karma.svg" alt="icon" class=".card_wrap__card__icon">
+    </article>
+  
+    <article class="card_wrap__card">
+      <h1 class="card_wrap__card__heading">Calculator</h1>
+      <p class="card_wrap__card__paragraph">Uses data from past projects to provide better delivery estimates</p>
+      <img src="./SVG/icon-calculator.svg" alt="icon" class=".card_wrap__card__icon">
+    </article>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+  </section>
 
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/KepKepgithub" target="_blank">Emīls Soldatovs(KepKep)</a>.
     </p>
   </footer>
+  
 </body>
 </html>
