@@ -5,44 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/main.css">
+
   <title>Frontend Mentor | Four card feature section</title>
+  
 </head>
 <body>
   
   <header class="header">
-    <div class="header__heading">Reliable, efficient delivery</div>
-    <div class="header__heading header__heading--bold">Powered by Technology</div>
-    <div class="header__paragraph">
+    <h2 class="header__heading">Reliable, efficient delivery</h2>
+    <h2 class="header__heading header__heading--bold">Powered by Technology</h2>
+    <p class="header__paragraph">
       Our Artificial Intelligence powered tools use millions of project data points 
       to ensure that your project is successful
-    </div>
+    </p>
   </header>
 
   <section class="card_wrap">
 
     <article class="card_wrap__card">
-      <h1 class="card_wrap__card__heading">Supervisor</h1>
-      <p class="card_wrap__card__paragraph">Monitors activity to identify project roadblocks</p>
-      <img src="./SVG/icon-supervisor.svg" alt="icon" class=".card_wrap__card__icon">
+      <div class="card_wrap__card__text">
+        <h1 class="card_wrap__card__text__heading">Supervisor</h1>
+        <p class="card_wrap__card__text__paragraph">Monitors activity to identify project roadblocks</p>
+      </div>
+      <img src="./SVG/icon-supervisor.svg" alt="icon" class="card_wrap__card__icon">
     </article>
   
     <article class="card_wrap__card">
-      <h1 class="card_wrap__card__heading">Team Builder</h1>
-      <div class="card_wrap__card__paragraph">Scans our talent network to create the optimal team for your project</div>
-      <img src="./SVG/icon-team-builder.svg" alt="icon" class=".card_wrap__card__icon">
+      <div class="card_wrap__card__text">
+        <h1 class="card_wrap__card__text__heading">Team Builder</h1>
+        <div class="card_wrap__card__text__paragraph">Scans our talent network to create the optimal team for your project</div>
+      </div>
+      <img src="./SVG/icon-team-builder.svg" alt="icon" class="card_wrap__card__icon">
     </article>
   
     <article class="card_wrap__card">
-      <h1 class="card_wrap__card__heading">Karma</h1>
-      <p class="card_wrap__card__paragraph">Regularly evaluates our talent to ensure quality</p>
-      <img src="./SVG/icon-karma.svg" alt="icon" class=".card_wrap__card__icon">
+      <div class="card_wrap__card__text">
+        <h1 class="card_wrap__card__text__heading">Karma</h1>
+        <p class="card_wrap__card__text__paragraph">Regularly evaluates our talent to ensure quality</p>
+      </div>
+      <img src="./SVG/icon-karma.svg" alt="icon" class="card_wrap__card__icon">
     </article>
   
     <article class="card_wrap__card">
-      <h1 class="card_wrap__card__heading">Calculator</h1>
-      <p class="card_wrap__card__paragraph">Uses data from past projects to provide better delivery estimates</p>
-      <img src="./SVG/icon-calculator.svg" alt="icon" class=".card_wrap__card__icon">
+      <div class="card_wrap__card__text">
+        <h1 class="card_wrap__card__text__heading">Calculator</h1>
+        <p class="card_wrap__card__text__paragraph">Uses data from past projects to provide better delivery estimates</p>
+      </div>
+      <img src="./SVG/icon-calculator.svg" alt="icon" class="card_wrap__card__icon">
     </article>
 
   </section>

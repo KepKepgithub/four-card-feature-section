@@ -1,0 +1,82 @@
+@media only screen and (min-width:300px){
+    .card_wrap{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__card{
+            padding: 1.5em;
+            margin-bottom: 1.5em;
+            box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.20);
+            border-radius: .5rem;
+
+            display: grid;
+            grid-template-rows: 1.5fr 1fr;
+
+            // Positions the icons to the right
+            &__icon{
+                justify-self: end;
+            }
+
+            // First Card "Supervisor"
+            border-top: 5px solid $cyan;
+
+            // "Team Builder"
+            &:nth-child(2){
+                border-color: $red;
+            }
+            // "Karma"
+            &:nth-child(3){
+                border-color: $orange;
+            }
+            // "Calculator"
+            &:nth-child(4){
+                border-color: $blue;
+            }
+            &__text{
+                &__heading{
+                    color: $dark_blue;
+                }
+                &__paragraph{
+                    color: $grayish_blue;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1200px){
+    .card_wrap{
+        margin-bottom: 2em;
+
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 1em;
+        grid-template-areas:
+        "supervisor team_builder calculator"
+        "supervisor karma        calculator" 
+        ;
+
+        &__card{
+
+            &:nth-child(1){
+                grid-area: supervisor;
+                height: 50%;
+                align-self: center;
+            }
+            &:nth-child(2){
+                grid-area: team_builder;
+                height: 100%;
+            }
+            &:nth-child(3){
+                grid-area: karma;
+                height: 100%;
+            }
+            &:nth-child(4){
+                grid-area: calculator;
+                height: 50%;
+                align-self: center;
+            }
+        }
+    }
+}

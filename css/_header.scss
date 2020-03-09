@@ -1,0 +1,30 @@
+@media only screen and (min-width:300px){
+    .header{
+        text-align: center;
+        color: $grayish_blue;
+        &__heading{
+            font-weight: 200;
+            &:nth-child(2){
+                margin-bottom: .5em;
+            }
+            &--bold{
+                font-weight: 600;
+                color: $dark_blue;
+            }
+        }
+        &__paragraph{
+            margin-bottom: 2em;
+        }
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .header{
+        &__heading{
+            font-size: 2rem;
+        }
+        &__paragraph{
+            font-size: 1.1rem;
+        }
+    }
+}

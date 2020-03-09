@@ -1,0 +1,23 @@
+
+
+// MOBILE
+@media only screen and (min-width:300px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "cards "
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .card_wrap{
+        grid-area: cards;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
